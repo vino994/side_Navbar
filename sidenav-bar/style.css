@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+     scroll-behavior: smooth;
+    height: auto;
+    width: 100vw;
+    background-color: #242424;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    transition: .5s;
+}
+.nav{
+    width: 68px;
+    height: 100vh;
+    background-color: black;
+    position:fixed;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    transition:.5s;
+    z-index: 999;
+   
+}
+.nav.active{
+    width: 200px;
+}
+.nav nav{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+.nav nav ul{
+   width: 100%;
+   color: white;
+   display: flex;
+   align-items: flex-start;
+   gap: 30px;
+   padding: 20px;
+   list-style: none;
+   justify-content: center;
+   flex-direction: column;
+}
+.nav nav ul li {
+    width: 100%;
+   
+}
+.nav nav ul li a{
+   text-decoration: none;
+   color: white;
+   width: 0%;
+   padding: 5px;
+   position: relative;
+   transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+   display: flex;
+   font-weight: bold;
+   font-family: monospace;
+   align-items: center;
+   font-size: 1.5em;
+   border-radius: 10px;
+}
+.nav nav ul li a:hover{
+    text-shadow: 0 0 15px white,0 0 30px white;
+    background-color: white;
+    width: 100%;
+    color:black;
+}
+.nav nav ul li a .text{
+    margin-left: 20px;
+}
+.open{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    padding: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.open span{
+    font-size: 1.5em;
+    
+}
+.open span i{
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .5s;
+}
+.open span.active i{
+    transform: rotate(0deg);
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+section h1{
+    font-size: 8em;
+    color: white;
+    text-shadow: 1px 2px 2px white,1px 4px 2px white,1px 6px 2px white,1px 8px 2px white ,0 0 15px;
+}

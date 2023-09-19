@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideNavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="open">
+           
+            <span id="close"> <i class="fa-solid fa-xmark" id="icons"></i></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#one">
+                    <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                    <span class="text">Home</span>
+                    </a>
+                </li>
+                <li><a href="#two">
+                    <span class="icon"><i class="fa-solid fa-address-book"></i></span>
+                    <span class="text">Address</span>
+                    </a>
+                </li>
+                <li><a href="#three">
+                    <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                    <span class="text">Settings</span>
+                    </a>
+                </li>
+                <li><a href="#four">
+                    <span class="icon"><i class="fa-solid fa-network-wired"></i></span>
+                    <span class="text">Network</span>
+                    </a>
+                </li>
+                <li><a href="#five">
+                    <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="text">Service</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+   
+        <section id="one">
+            <h1>
+                <span><i class="fa-solid fa-house-chimney"></i></span>
+                <span>Home</span>
+            </h1>
+        </section>
+        <section id="two">
+            <h1>
+                <span><i class="fa-solid fa-address-book"></i></span>
+                <span>Address</span>
+            </h1>
+        </section>
+        <section id="three">
+            <h1>
+                <span><i class="fa-solid fa-gear"></i></span>
+                <span>Settings</span>
+            </h1>
+        </section>
+        <section id="four">
+            <h1>
+                <span><i class="fa-solid fa-network-wired"></i></span>
+                <span>Networks</span>
+            </h1>
+        </section>
+        <section id="five">
+            <h1>
+                <span><i class="fa-solid fa-shield-halved"></i></span>
+                <span>Service</span>
+            </h1>
+        </section>
+
+ <script>
+      var toggle = document.getElementById('close');
+     var nav = document.querySelector('.nav');
+      toggle.addEventListener('click',function(){
+        toggle.classList.toggle('active')
+        nav.classList.toggle('active')
+      })
+ </script>
+</body>
+
+</html>
